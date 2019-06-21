@@ -1,0 +1,183 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9  \par
+create topic :\par
+bin\\windows\\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test\par
+\par
+list a topic\par
+bin\\windows\\kafka-topics.bat --list --zookeeper localhost:2181\par
+\par
+send message\par
+bin\\windows\\kafka-console-producer.bat --broker-list localhost:9092 --topic test\par
+\par
+\par
+\par
+Image -> to start mysql server\par
+$ docker run --name mydb -e MYSQL_ROOT_PASSWORD=mypass -d mysql:5.5\par
+\par
+
+\pard\sa200\sl276\slmult1 Image -> to start phpmyadmin\par
+docker run -d --name php --link mydb:db -p 80:80 phpmyadmin/phpmyadmin\par
+\par
+\par
+db-->\par
+docker run --name mydb -p 9001:9001 dbimage1\par
+webapp-->\par
+docker run --name mydb:db -p 8080:8080 sqlimage1\par
+\par
+\par
+links -->\par
+{{\field{\*\fldinst{HYPERLINK https://spring.io/projects/spring-cloud }}{\fldrslt{https://spring.io/projects/spring-cloud\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://cloud.spring.io/spring-cloud-config/single/spring-cloud-config.html }}{\fldrslt{https://cloud.spring.io/spring-cloud-config/single/spring-cloud-config.html\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://docs.spring.io/spring-data/jpa/docs/current/reference/html/ }}{\fldrslt{https://docs.spring.io/spring-data/jpa/docs/current/reference/html/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html }}{\fldrslt{https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-ribbon.html }}{\fldrslt{https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-ribbon.html\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://spring.io/guides/gs/client-side-load-balancing/ }}{\fldrslt{https://spring.io/guides/gs/client-side-load-balancing/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://spring.io/guides/gs/service-registration-and-discovery/ }}{\fldrslt{https://spring.io/guides/gs/service-registration-and-discovery/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://dzone.com/articles/microservice-spring-cloud-eureka-server-configurat }}{\fldrslt{https://dzone.com/articles/microservice-spring-cloud-eureka-server-configurat\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://cloud.spring.io/spring-cloud-netflix/multi/multi__service_discovery_eureka_clients.html }}{\fldrslt{https://cloud.spring.io/spring-cloud-netflix/multi/multi__service_discovery_eureka_clients.html\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-eureka-server.html }}{\fldrslt{https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-eureka-server.html\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://cloud.spring.io/spring-cloud-netflix/multi/multi__router_and_filter_zuul.html }}{\fldrslt{https://cloud.spring.io/spring-cloud-netflix/multi/multi__router_and_filter_zuul.html\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://spring.io/guides/gs/routing-and-filtering/ }}{\fldrslt{https://spring.io/guides/gs/routing-and-filtering/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://spring.io/projects/spring-cloud-openfeign }}{\fldrslt{https://spring.io/projects/spring-cloud-openfeign\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://spring.io/guides/gs/circuit-breaker/ }}{\fldrslt{https://spring.io/guides/gs/circuit-breaker/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://www.mutuallyhuman.com/blog/2013/05/09/choosing-an-sso-strategy-saml-vs-oauth2/ }}{\fldrslt{https://www.mutuallyhuman.com/blog/2013/05/09/choosing-an-sso-strategy-saml-vs-oauth2/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://spin.atomicobject.com/2016/05/30/openid-oauth-saml/ }}{\fldrslt{https://spin.atomicobject.com/2016/05/30/openid-oauth-saml/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://spring.io/guides/gs/securing-web/ }}{\fldrslt{https://spring.io/guides/gs/securing-web/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://spring.io/guides/gs/authenticating-ldap/ }}{\fldrslt{https://spring.io/guides/gs/authenticating-ldap/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://spring.io/projects/spring-security-oauth }}{\fldrslt{https://spring.io/projects/spring-security-oauth\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://spring.io/guides/tutorials/spring-boot-oauth2/ }}{\fldrslt{https://spring.io/guides/tutorials/spring-boot-oauth2/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://docs.spring.io/spring-security-oauth2-boot/docs/current-SNAPSHOT/reference/htmlsingle/ }}{\fldrslt{https://docs.spring.io/spring-security-oauth2-boot/docs/current-SNAPSHOT/reference/htmlsingle/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/htmlsingle/ }}{\fldrslt{https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/htmlsingle/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://kafka.apache.org/22/documentation/streams/quickstart }}{\fldrslt{https://kafka.apache.org/22/documentation/streams/quickstart\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://cloud.docker.com/u/shreyakilledar/repository/list }}{\fldrslt{https://cloud.docker.com/u/shreyakilledar/repository/list\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://github.com/ }}{\fldrslt{https://github.com/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://docs.spring.io/spring-data/jpa/docs/current/reference/html/ }}{\fldrslt{https://docs.spring.io/spring-data/jpa/docs/current/reference/html/\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://spring.io/projects }}{\fldrslt{https://spring.io/projects\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://spring.io/projects/spring-cloud-openfeign }}{\fldrslt{https://spring.io/projects/spring-cloud-openfeign\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://spring.io/projects/spring-cloud-netflix }}{\fldrslt{https://spring.io/projects/spring-cloud-netflix\ul0\cf0}}}}\f0\fs22\par
+{{\field{\*\fldinst{HYPERLINK https://www.google.com/search?q=qconsf+netflix+sudhir&rlz=1C1GCEA_enIN826IN826&oq=qconsf+netflix+sudhir&aqs=chrome..69i57.15631j0j7&sourceid=chrome&ie=UTF-8 }}{\fldrslt{https://www.google.com/search?q=qconsf+netflix+sudhir&rlz=1C1GCEA_enIN826IN826&oq=qconsf+netflix+sudhir&aqs=chrome..69i57.15631j0j7&sourceid=chrome&ie=UTF-8\ul0\cf0}}}}\f0\fs22\par
+\par
+Day 1\par
+\par
+Spring Data JPA\par
+\par
+Spring Data\par
+What and Why?\par
+Introduction to Spring Data\par
+Setting up environment\par
+Using CRUDRepository\par
+Introduction to Query Methods\par
+Creating Database Queries from Method Names\par
+Creating Database Queries with the @Query Annotation\par
+Creating Database Queries with Named Queries\par
+Creating Database Queries with the JPA Criteria API\par
+\par
+\par
+Day 2 \par
+\par
+Spring Micro Services\par
+\par
+                                Micro Services Architecture\par
+\par
+                                What is Micro Service?\par
+\par
+Why Micro Services Architecture?\par
+\par
+Patterns in Micro Services Architecture\par
+\par
+API Gateway\par
+Service registry\par
+Service discovery\par
+Spring Cloud Config\par
+\par
+Binding to GitHub\par
+Encrypting Properties\par
+Working with Config Client\par
+                                Spring Cloud Netflix\par
+\par
+Micro services Architecture via Netflix Components\par
+Working with\par
+Netflix Eureka\par
+Netflix Zuul\par
+Netflix Ribbon\par
+               \par
+\par
+Day 3\par
+\par
+Spring Micro Services                    \par
+\par
+                                Spring Cloud Netflix\par
+\par
+Netflix Hystrix Dashboard\par
+Netflix Feign\par
+Spring Cloud Stream\par
+\par
+Understanding Message Driven Micro Services                   \par
+Day 4 \par
+\par
+Spring Security\par
+\par
+Understanding configuration\par
+Introduction to SAML\par
+\par
+Assertions\par
+Protocol\par
+Bindings\par
+Profiles\par
+Spring (Cloud) Security\par
+\par
+Acquiring and Integrating Spring Security\par
+Basic Configuration\par
+OAuth for Spring Security\par
+\par
+Third-Party Authorization\par
+OAuth\par
+Roles and Initial Flow\par
+Grant Types\par
+Access Tokens\par
+The OAuth-Aware RestTemplate\par
+Single Sign On\par
+\par
+\par
+\par
+Day 5   \par
+\par
+                Docker\par
+\par
+Understand the architecture\par
+What can I use Docker for?\par
+What are the major Docker components?\par
+What is Docker\rquote s architecture?\par
+Virtualization Vs Containerization\par
+Installing Docker\par
+\par
+Running a Docker Container\par
+\par
+Installing a spring boot application in docker container\par
+\par
+\par
+\par
+                Kafka\par
+\par
+                                What is distributed streaming platform?\par
+\par
+                                Why Kafka?\par
+\par
+                                4 important APIs\par
+\par
+                                                Producer, Consumer, Streams, Connector\par
+\par
+                                A simple example to understand\par
+\par
+                                                Kafka Messaging\par
+\par
+                                                Kafka Cluster\par
+\par
+\par
+\par
+\par
+\par
+}
+ 
